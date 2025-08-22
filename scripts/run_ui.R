@@ -1,6 +1,3 @@
-library(shiny)
-library(bslib)
-
 run_ui <- function(data, pages){
   ui <- page_fluid(
     div(style = "margin-top: 30px;",
