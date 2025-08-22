@@ -16,8 +16,16 @@ source("scripts/get_data.R")
 source("scripts/run_ui.R")
 
 
-# ---- Main ----
 
+#  ---- Page register global ----
+pages <- list(
+  # ---- example's ----
+  #"Cars (plot)"   = list(ui = page_cars_ui,   server = page_cars_server),
+  #"Iris (table)"  = list(ui = page_iris_ui,   server = page_iris_server),
+  #"Random (plot)" = list(ui = page_random_ui, server = page_random_server)
+)
+
+# ---- Main ----
 main <- function(){
   data <- get_data()
   run_ui(data)
